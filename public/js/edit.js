@@ -8,7 +8,7 @@ const delButtonHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert('Failed to delete project');
+        alert('Error! failed to delete');
       }
     }
   };
