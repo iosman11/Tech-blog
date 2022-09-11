@@ -1,0 +1,248 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(81, 32, 32);
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+a {
+    color: tan;
+    text-decoration: none;
+}
+
+header h1 {
+    padding: 20px;
+    background-color: tan;
+    color: rgb(81, 32, 32);
+    width: 20%;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+body {
+    background-color: tan;
+}
+
+input {
+    padding: 2px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+button {
+    padding: 5px;
+}
+
+#home {
+    width: 75%;
+}
+
+#post-container {
+    margin: 20px;
+    border: 3px solid black ;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#post-container a {
+    text-decoration: none;
+}
+
+#post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(81, 32, 32);
+    color: grey;
+    padding: 0 20px;
+}
+
+#post-body {
+    text-align: left;
+    padding: 12px;
+    color: rgb(81, 32, 32);
+    font-size: 20px;
+}
+
+#form-container {
+    margin: 20px;
+    border: 3px solid black ;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+#form-container h2 {
+    background-color: rgb(81, 32, 32);
+    margin-top: 0;
+    padding: 10px;
+    color: tan;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.form-group a {
+    color: grey;
+}
+
+.post-form {
+    padding: 0 10px;
+}
+
+#post-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    margin: 20px 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: tan;
+}
+
+#post-update {
+    margin-bottom: 10px;
+}
+
+#posts-wrap {
+    width: 100%;
+}
+
+#edit-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#new-post {
+    background-color: rgb(81, 32, 32);
+    padding: 10px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 90%;
+    width: 10%; 
+}
+
+#comment-wrap {
+    width: 50%;
+}
+
+#comment-textbox {
+    width: 100%;
+    height: 50px;
+}
+
+#comment-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.comment-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comment-link {
+    color: grey;
+}
+
+.edit-post {
+    margin: 20px;
+    border: 3px solid black ;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+.edit-post h2 {
+    background-color: rgb(81, 32, 32);
+    margin-top: 0;
+    padding: 10px;
+    color: tan;
+}
+
+main {
+    height: 100%;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    #form-container {
+        width: 100%;
+    }
+
+    #post-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #post-header h1{
+        font-size: 20px;
+    }
+
+    #post-header span,
+    #post-body,
+    .comment-links a{
+        font-size: 12px;
+    }
+
+    #comment-wrap,
+    .edit-post {
+        width: 100%;
+    }
+
+    #new-post {
+        width: 30%;
+    }
+
+    header h1 {
+        font-size: 18px;
+        padding: 10px;
+        width: 25%;
+    }
+
+    header nav {
+        font-size: 15px;
+    }
+}
+
+
+
